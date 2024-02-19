@@ -4,6 +4,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import React, { useState, useEffect } from 'react';
 import userEvent from '@testing-library/user-event';
+import Logo from './Logo';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -40,6 +41,7 @@ const Home = () => {
                 </h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <Logo />
         </div>
     )
 }
